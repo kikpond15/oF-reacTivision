@@ -7,8 +7,6 @@ void ofApp::setup(){
 
     //setup port
     tuio.setup(new ofxTuioUdpReceiver(3333));
-    //or tcp...
-    //tuio.setup(new ofxTuioTcpReceiver(3333));
     
     //add event
     ofAddListener(tuio.AddTuioObject, this, &ofApp::tuioAdded);
